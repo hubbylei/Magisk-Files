@@ -1,2 +1,5 @@
-## Magisk (60422964) (25001)
-Create Merge-upstream.yml
+## Magisk (a8d33416) (25001)
+
+- Cleanup manager.sh
+- Anchor Snackbar above reboot FAB in FlashFragment
+- scripts: fix remaining instances of && ||
