@@ -1,2 +1,2 @@
-## Magisk (2ceaa3dd) (25001)
-Update build.yml
+## Magisk (6e6cf14d) (25001)
+\n- Cleanup manager.sh\n- Anchor Snackbar above reboot FAB in FlashFragment\n- scripts: fix remaining instances of && ||
