@@ -1,3 +1,5 @@
-## Magisk (931ed84e) (25001)
+## Magisk (67534dec) (25001)
 
-- Fix config backup for legacy SAR
+- Proper namespacing
+- Add dtb test command
+- Update help message and make behavior consistent
