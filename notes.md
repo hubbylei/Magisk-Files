@@ -1,3 +1,6 @@
-## Magisk (bee8f00f) (25001)
+## Magisk (ff76a671) (25001)
 
-- Abort when unsupported dtb is detected
+- Fix finding recovery image on direct install
+- Cleanup libbase
+- Use AtomicBoolean
+- Fix env overflow
