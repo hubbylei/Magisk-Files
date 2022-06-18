@@ -1,6 +1,4 @@
-## Magisk (ff76a671) (25001)
+## Magisk (fe44b8cc) (25001)
 
-- Fix finding recovery image on direct install
-- Cleanup libbase
-- Use AtomicBoolean
-- Fix env overflow
+- Force app version not lower than daemon
+- Set version comment in apk
