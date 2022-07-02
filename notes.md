@@ -1,5 +1,9 @@
-## Magisk (dda3c901) (25101)
+## Magisk (a5b52d29) (25101)
 
-- Correct `ro.crypto.state` check
-- Fix cargo builds on Windows
-- Setup preliminary rust infrastructure
+- Update russian translation
+- More friendly and clear error message
+- Update Brazilian translation
+- Partially fixed Japanese translation
+- More log for get_manager
+- Fix app state
+- Setup logging infra in the Rust side
