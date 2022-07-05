@@ -1,9 +1,3 @@
-## Magisk (a5b52d29) (25101)
+## Magisk (06ccd298) (25101)
 
-- Update russian translation
-- More friendly and clear error message
-- Update Brazilian translation
-- Partially fixed Japanese translation
-- More log for get_manager
-- Fix app state
-- Setup logging infra in the Rust side
+- Update to ONDK r24.2
