@@ -1,3 +1,4 @@
-## Magisk (06ccd298) (25101)
+## Magisk (f64b6830) (25101)
 
-- Update to ONDK r24.2
+- Rearchitect logging
+- Move all logging into Rust
