@@ -1,4 +1,5 @@
-## Magisk (f64b6830) (25101)
+## Magisk (237e46d3) (25101)
 
-- Rearchitect logging
-- Move all logging into Rust
+- Update german translation
+- Add Bengali translation
+- Greek translation updated
