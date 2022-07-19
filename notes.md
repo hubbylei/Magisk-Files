@@ -1,5 +1,4 @@
-## Magisk (237e46d3) (25101)
+## Magisk (e4002b47) (25101)
 
-- Update german translation
-- Add Bengali translation
-- Greek translation updated
+- Fix
+- Fix booting into recovery with Android 13 GKI kernels
