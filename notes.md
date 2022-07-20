@@ -1,4 +1,3 @@
-## Magisk (e4002b47) (25101)
+## Magisk (fd17f69d) (25102)
 
-- Fix
-- Fix booting into recovery with Android 13 GKI kernels
+- Release new canary build
