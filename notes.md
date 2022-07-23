@@ -1,12 +1,9 @@
-## Magisk (c8154370) (25201)
+## Magisk (297b483c) (25201)
 
-- Clean up code
-- Update to ONDK r25.0
-- Release new canary build
-- Update README
-- Release Magisk v25.2
-- Update v25.2 docs
-- Make sepolicy.rules relative if possible
-- Clean only java projects when clean java
-- Later check persistent_properties
-- app: fix typo
+- Hungarian translation
+- Check magisk32 exists
+- magisk_node: check target exists
+- Match app_zygote by context
+- Support 32-bit emulators
+- Format with rustfmt
+- Update to ONDK r25.1
