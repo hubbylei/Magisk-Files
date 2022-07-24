@@ -1,9 +1,9 @@
-## Magisk (297b483c) (25201)
+## Magisk (5b400808) (25201)
 
-- Hungarian translation
-- Check magisk32 exists
-- magisk_node: check target exists
-- Match app_zygote by context
-- Support 32-bit emulators
-- Format with rustfmt
-- Update to ONDK r25.1
+- Update Cargo.toml
+- Update cxx.rs
+- Proper build scripts
+- Restructure the native module
+- Restore context before copy
+- Fix app_zygote context
+- Fix CRLF
