@@ -1,9 +1,4 @@
-## Magisk (5b400808) (25201)
+## Magisk (1370ca53) (25201)
 
-- Update Cargo.toml
-- Update cxx.rs
-- Proper build scripts
-- Restructure the native module
-- Restore context before copy
-- Fix app_zygote context
-- Fix CRLF
+- Fix UB when remote process died
+- Support patching AVD with release builds
