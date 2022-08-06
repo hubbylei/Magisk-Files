@@ -1,4 +1,3 @@
-## Magisk (1370ca53) (25201)
+## Magisk (d36182cb) (25201)
 
-- Fix UB when remote process died
-- Support patching AVD with release builds
+- Update AGP
