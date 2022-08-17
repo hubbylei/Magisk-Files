@@ -1,4 +1,4 @@
-## Magisk (622e74ce) (25201)
+## Magisk (6dcedc18) (25201)
 
-- Move part of libbase to Rust
-- Fix outdated state
+- More Rust
+- Make IDE recognize we are targeting Android
