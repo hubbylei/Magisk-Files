@@ -1,4 +1,5 @@
-## Magisk (6dcedc18) (25201)
+## Magisk (75db3712) (25201)
 
+- Support testing magiskinit on arm64 AVD
 - More Rust
-- Make IDE recognize we are targeting Android
+- Better build script
