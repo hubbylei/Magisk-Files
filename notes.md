@@ -1,5 +1,4 @@
-## Magisk (75db3712) (25201)
+## Magisk (31567a2a) (25201)
 
-- Support testing magiskinit on arm64 AVD
-- More Rust
-- Better build script
+- Update to ONDK r25.2
+- Introduce zygisk loader
