@@ -1,4 +1,3 @@
-## Magisk (31567a2a) (25201)
+## Magisk (e9020e41) (25202)
 
-- Update to ONDK r25.2
-- Introduce zygisk loader
+- Release new canary build
