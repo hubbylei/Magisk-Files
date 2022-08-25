@@ -1,9 +1,10 @@
-## Magisk (425b2d9d) (25203)
+## Magisk (29d3a7cc) (25203)
 
-- Make sure UI and state is in sync
-- Release new canary build
-- Do not crash root service in stub
-- Pre-grant permissions if possible
-- Ensure JobService is rescheduled
-- Update app to target API 33
-- Use VERSION_CODES instead of raw numbers
+- Update French translation
+- Setup notification on app init
+- Update RU strings
+- update Albania strings
+- Update zh-rCN translation
+- Update Portuguese & Portuguese Brazilian Translations
+- Update Slovak translation
+- Avoid hardcode package name
