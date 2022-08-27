@@ -1,10 +1,6 @@
-## Magisk (29d3a7cc) (25203)
+## Magisk (240949da) (25203)
 
-- Update French translation
-- Setup notification on app init
-- Update RU strings
-- update Albania strings
-- Update zh-rCN translation
-- Update Portuguese & Portuguese Brazilian Translations
-- Update Slovak translation
-- Avoid hardcode package name
+- Dynamically generate component names at runtime
+- Make stub patching 100% offline
+- Move patching logic out of AXML
+- Remove usage of AndroidX CoreComponentFactory
