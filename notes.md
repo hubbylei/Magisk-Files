@@ -1,4 +1,3 @@
-## Magisk (4990f86d) (25203)
+## Magisk (e6c698c5) (25203)
 
-- Make Zygisk API 0BSD
-- Cleanup zygisk headers
+- Avoid doing any unmounts for SysUI
