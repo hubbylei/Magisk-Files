@@ -1,3 +1,3 @@
-## Magisk (e6c698c5) (25203)
+## Magisk (8646833e) (25203)
 
-- Avoid doing any unmounts for SysUI
+- Preserve logd_fd after specialization
