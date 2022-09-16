@@ -1,3 +1,3 @@
-## Magisk (1e61ec30) (25203)
+## Magisk (24e8f08c) (25203)
 
-- Move all xwrap to Rust
+- Don't crash when nullptr paired with len = 0
