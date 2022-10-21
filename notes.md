@@ -1,3 +1,3 @@
-## Magisk (b52cf2cb) (25205)
+## Magisk (11a96523) (25205)
 
-- Release new canary build
+- Update README.md to specify python version 3.8+
