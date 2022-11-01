@@ -1,3 +1,6 @@
-## Magisk (11a96523) (25205)
+## Magisk (04f2f371) (25205)
 
-- Update README.md to specify python version 3.8+
+- Properly detect SysUI appId
+- Restrict pointer aliasing
+- Update AGP
+- Support Linux < 3.6
