@@ -1,6 +1,5 @@
-## Magisk (04f2f371) (25205)
+## Magisk (daf80a69) (25205)
 
-- Properly detect SysUI appId
-- Restrict pointer aliasing
-- Update AGP
-- Support Linux < 3.6
+- Stricter validation
+- Fix crashes whenever a zygisk module has ver > 4
+- Fix zygisk v4 ApiTable abi
