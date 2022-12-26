@@ -1,2 +1,6 @@
-## Magisk (ac566d82) (25205)
-Update Build-App.yml
+## Magisk (102ec806) (25206)
+
+- Use latest build tools
+- Release new canary build
+- Check Python 3.8+
+- Guard boot stages more precisely
