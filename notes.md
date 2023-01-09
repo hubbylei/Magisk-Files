@@ -1,3 +1,4 @@
-## Magisk (343c9254) (25206)
+## Magisk (1236ebda) (25206)
 
-- Wait for root service to bind
+- Update libsu
+- Fix NotificationService implementation
