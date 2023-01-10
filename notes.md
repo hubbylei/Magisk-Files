@@ -1,4 +1,4 @@
-## Magisk (1236ebda) (25206)
+## Magisk (3e5cb46e) (25206)
 
-- Update libsu
-- Fix NotificationService implementation
+- Cleanup APIs
+- Add inode plt hook APIs
