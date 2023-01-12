@@ -1,4 +1,5 @@
-## Magisk (3e5cb46e) (25206)
+## Magisk (0b38c529) (25206)
 
-- Cleanup APIs
-- Add inode plt hook APIs
+- Update LSPlt
+- Fix busybox filename
+- Fix stub resources load on Android 5
