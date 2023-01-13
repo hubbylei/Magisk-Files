@@ -1,5 +1,4 @@
-## Magisk (0b38c529) (25206)
+## Magisk (6752f072) (25206)
 
-- Update LSPlt
-- Fix busybox filename
-- Fix stub resources load on Android 5
+- Cleanup unused functions
+- Use null oat dir in root service only
