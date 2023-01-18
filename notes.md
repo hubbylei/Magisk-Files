@@ -1,4 +1,6 @@
-## Magisk (6752f072) (25206)
+## Magisk (62ed1cf0) (25206)
 
-- Cleanup unused functions
-- Use null oat dir in root service only
+- Fix typos
+- umount old hijack binary
+- Remove READ_EXTERNAL_STORAGE permission added by AGP 1.8
+- Update AGP
