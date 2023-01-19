@@ -1,6 +1,3 @@
-## Magisk (62ed1cf0) (25206)
+## Magisk (4e59c67e) (25206)
 
-- Fix typos
-- umount old hijack binary
-- Remove READ_EXTERNAL_STORAGE permission added by AGP 1.8
-- Update AGP
+- Clear sepolicy rules when disable/remove modules
