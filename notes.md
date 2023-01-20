@@ -1,3 +1,5 @@
-## Magisk (4e59c67e) (25206)
+## Magisk (073ea442) (25206)
 
-- Clear sepolicy rules when disable/remove modules
+- Reduce unnecessary formatting
+- Reuse tmpfs for magic mount
+- Handle nullptr char* in Rust
