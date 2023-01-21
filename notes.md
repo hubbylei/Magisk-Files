@@ -1,5 +1,4 @@
-## Magisk (073ea442) (25206)
+## Magisk (778e36e7) (25206)
 
-- Reduce unnecessary formatting
-- Reuse tmpfs for magic mount
-- Handle nullptr char* in Rust
+- Fix ResourcesProvider being closed
+- Upgrade LSPlt
