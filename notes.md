@@ -1,4 +1,3 @@
-## Magisk (778e36e7) (25206)
+## Magisk (3c72e8ed) (25206)
 
-- Fix ResourcesProvider being closed
-- Upgrade LSPlt
+- Fix auto install stub
