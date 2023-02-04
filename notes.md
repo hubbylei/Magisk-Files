@@ -1,3 +1,4 @@
-## Magisk (3c72e8ed) (25206)
+## Magisk (36f81a3c) (25206)
 
-- Fix auto install stub
+- Ignore AMLogic 
+ormal\ slot suffix in scripts as well
