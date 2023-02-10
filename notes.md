@@ -1,4 +1,9 @@
-## Magisk (36f81a3c) (25206)
+## Magisk (d2aa6b57) (25206)
 
-- Ignore AMLogic 
-ormal\ slot suffix in scripts as well
+- run module uninstall.sh on Magisk uninstallation
+- Zygisk v4 module's plt commit should not use regex
+- Update appcompat
+- Remove unexpected /sbin/overlay.d
+- Refine
+- Add `init_boot.img` patching for Samsung tar firmware packages
+- Update dependencies
