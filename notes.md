@@ -1,4 +1,3 @@
-## Magisk (10e69014) (25206)
+## Magisk (6719bd9f) (25206)
 
-- Fix SKIP_FD_SANITIZATION false positive
-- Refactor sepolicy.rules resolve
+- Use statfs to check rootfs
