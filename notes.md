@@ -1,3 +1,4 @@
-## Magisk (6719bd9f) (25206)
+## Magisk (233694b6) (25206)
 
-- Use statfs to check rootfs
+- No kernel repack if it isn't patched at all
+- Use mountinfo for revert unmount
