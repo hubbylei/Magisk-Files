@@ -1,4 +1,11 @@
-## Magisk (076ecc74) (25206)
+## Magisk (4b4cc951) (25206)
 
-- Fix gzip decompression
-- Remove obsolete link
+- Update install.md
+- Update Japanese translation
+- Upgrade kotlin
+- No need to manually parse mount flags
+- Minor optimizations
+- Don't let inter_node upgrade to module_node
+- Refactor module and node implementation
+- Always mount tmpfs for dirs
+- Refactor magic mount to support overlayfs
