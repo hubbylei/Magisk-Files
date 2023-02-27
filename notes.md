@@ -1,11 +1,10 @@
-## Magisk (4b4cc951) (25206)
+## Magisk (ed0f5749) (25207)
 
-- Update install.md
-- Update Japanese translation
-- Upgrade kotlin
-- No need to manually parse mount flags
-- Minor optimizations
-- Don't let inter_node upgrade to module_node
-- Refactor module and node implementation
-- Always mount tmpfs for dirs
-- Refactor magic mount to support overlayfs
+- Fix release build
+- Release new canary build
+- Umount by tmpfs id
+- Identify tmpfs used by magisk
+- Add stub version to apk comment
+- Get rid of vtable hook
+- Remove unexpected files
+- Update Zygisk API documentation
