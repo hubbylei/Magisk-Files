@@ -1,6 +1,8 @@
-## Magisk (4cfbe4dc) (25208)
+## Magisk (96c7fb61) (25208)
 
-- Release new canary build
-- Fix avd-magisk
-- Update items in the right thread
-- Update proguard rules to fix module page crash
+- Remove fetchCustomUpdate
+- Move REMOUNT_ROOT
+- Use /data/adb/modules directly
+- Skip copy old rule
+- Allow R8 to delete fetchCanary
+- Fix typo
