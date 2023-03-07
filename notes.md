@@ -1,5 +1,9 @@
-## Magisk (42fe1083) (25209)
+## Magisk (00f150fd) (25210)
 
-- No greedy match to find parent mount point
-- Remove redundant stub.apk
-- Fix gradle cache
+- Fix mkdir
+- Release new canary build
+- No support for partitions w/o symlink in /system
+- Fix make private before remount
+- Replace parse_mnt with parse_mount_info
+- Update AGP
+- Fix race condition when switching root manager
