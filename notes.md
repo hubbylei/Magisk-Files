@@ -1,4 +1,7 @@
-## Magisk (a9a02634) (25210)
+## Magisk (68f035d8) (25210)
 
-- Postpone `showMainUI` when activity has stopped
-- No KeyDispatch or OnBackPress when no currentFocus
+- Use MenuProvider
+- Fix currentFocus
+- Cleanup filterable list implementation
+- Do not always create new adapter
+- Support `untrusted_app_32`
