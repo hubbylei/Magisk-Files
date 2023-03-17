@@ -1,7 +1,7 @@
-## Magisk (68f035d8) (25210)
+## Magisk (0f1d2148) (25210)
 
-- Use MenuProvider
-- Fix currentFocus
-- Cleanup filterable list implementation
-- Do not always create new adapter
-- Support `untrusted_app_32`
+- Sanitize any bad chars from mount_apex apex_manifest.pb string parsing
+- Fix unpack -n and repack -n of ZIMAGE kernel
+- Drop trailing garbage of gzip decompress
+- Cleanup ObservableList implementation
+- Update AGP
