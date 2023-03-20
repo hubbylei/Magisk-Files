@@ -1,3 +1,7 @@
-## Magisk (f3f7c15a) (25210)
+## Magisk (da79303c) (25210)
 
-- Bump minSdk to 23
+- Use RV to show Magisk logs
+- Remove meaningless umount in magiskinit
+- Clean up more codes
+- Fix su log with long command
+- Always fetch network state on process onStart
