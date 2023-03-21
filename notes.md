@@ -1,7 +1,10 @@
-## Magisk (da79303c) (25210)
+## Magisk (1acf1ad1) (25210)
 
-- Use RV to show Magisk logs
-- Remove meaningless umount in magiskinit
-- Clean up more codes
-- Fix su log with long command
-- Always fetch network state on process onStart
+- Upgrade termux-elf-cleaner to strip DT_PREINIT_ARRAY
+- Use partition name or devpath's name
+- Add more comments
+- Rename rules to preinit
+- Rename sepolicy.rules -> rules
+- Mount sepolicy.rules for migration
+- Refactor sepolicy.rules resolve app
+- Refactor sepolicy.rules resolve native
