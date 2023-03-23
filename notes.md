@@ -1,6 +1,5 @@
-## Magisk (aeaae61d) (25210)
+## Magisk (728560ed) (25210)
 
-- Fix preinit scripts
-- Fix installation crash
-- Make sure ro mmap region is not overwritten
-- Add amonet microloader support
+- Unlink preinit device if bind mount fails
+- Refactor magiskrc
+- Update LSPlt to avoid crash when hooking libc
