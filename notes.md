@@ -1,5 +1,5 @@
-## Magisk (728560ed) (25210)
+## Magisk (5ec63dcb) (25210)
 
-- Unlink preinit device if bind mount fails
-- Refactor magiskrc
-- Update LSPlt to avoid crash when hooking libc
+- Upgrade LSPlt to bypass a bionic bug
+- Force ramdisk format to lz4_legacy for v4
+- Use app_dir to detect systemui instead
