@@ -1,3 +1,9 @@
-## Magisk (6f178721) (25210)
+## Magisk (f58e7039) (25210)
 
-- Clean up some codes
+- Fix release build
+- Cleanup more databinding implementation
+- Update RU strings
+- Update Android Studio
+- Update Albania
+- Update Chinese translation
+- Update Slovak translation
