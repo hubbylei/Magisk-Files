@@ -1,9 +1,4 @@
-## Magisk (f58e7039) (25210)
+## Magisk (5c41bd4d) (25210)
 
-- Fix release build
-- Cleanup more databinding implementation
-- Update RU strings
-- Update Android Studio
-- Update Albania
-- Update Chinese translation
-- Update Slovak translation
+- Compress jniLibs
+- Better AVD support
