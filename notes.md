@@ -1,4 +1,7 @@
-## Magisk (5c41bd4d) (25210)
+## Magisk (b651dc81) (25210)
 
-- Compress jniLibs
-- Better AVD support
+- Specify foregroundServiceType for DownloadService
+- Update dependencies
+- No more patching libc.a on 64bit platforms
+- Consolidate zygisk cleanup routines
+- New way to unload zygisk
