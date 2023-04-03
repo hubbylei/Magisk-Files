@@ -1,7 +1,5 @@
-## Magisk (b651dc81) (25210)
+## Magisk (a3582d00) (25210)
 
-- Specify foregroundServiceType for DownloadService
-- Update dependencies
-- No more patching libc.a on 64bit platforms
-- Consolidate zygisk cleanup routines
-- New way to unload zygisk
+- Make module mirror read only
+- Show confirm dialog when installing local module
+- Update zygisk API to avoid mem leak
