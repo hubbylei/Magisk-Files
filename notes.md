@@ -1,5 +1,14 @@
-## Magisk (a3582d00) (25210)
+## Magisk (c15ce95f) (25211)
 
-- Make module mirror read only
-- Show confirm dialog when installing local module
-- Update zygisk API to avoid mem leak
+- Release new canary build
+- Fix restorecon
+- Cancel recursive bind
+- No need to mount ROOTMIR if tmp_dir != /sbin
+- Better AVD support
+- Better string split implementation
+- Make base as template argument for optimization
+- Get random separately
+- Use stable random seed
+- Reorganize code
+- Update sq strings.xml
+- Update Slovak translation
