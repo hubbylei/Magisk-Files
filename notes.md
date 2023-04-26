@@ -1,5 +1,4 @@
-## Magisk (83d837d8) (26101)
-- Update/refine Spanish translations
-- Update strings.xml<br>Incorrectly placed punctuation marks have been removed. Word order and some expressions have been corrected. The style of the menu headings and descriptions has been unified in the settings.
-- Update PORTUGUESE translation
-- tr language update
+## Magisk (3733c9a0) (26101)
+- CI: add avd test
+- Set text and background color
+- Enable avd hack for debug build
