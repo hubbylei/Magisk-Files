@@ -1,4 +1,2 @@
-## Magisk (3733c9a0) (26101)
-- CI: add avd test
-- Set text and background color
-- Enable avd hack for debug build
+## Magisk (0cf0d2b8) (26101)
+- Move avd_hack boolean out of init class
