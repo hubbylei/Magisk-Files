@@ -1,2 +1,2 @@
-## Magisk (0cf0d2b8) (26101)
-- Move avd_hack boolean out of init class
+## Magisk (f7de649a) (26101)
+- Update ODNK requirement to r25.3
