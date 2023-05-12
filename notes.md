@@ -1,2 +1,2 @@
-## Magisk (1610092e) (26101)
-- Increase wait timeout
+## Magisk (bd265105) (26101)
+- Simplify prefs migration
