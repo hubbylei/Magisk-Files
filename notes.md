@@ -1,3 +1,3 @@
-## Magisk (a5768e02) (26101)
-- Cleanup byte_channel implementation
-- Cleanup filter_out_stream implementation
+## Magisk (f95478f1) (26101)
+- Truncate file only if needed
+- Export get_prop to Rust
