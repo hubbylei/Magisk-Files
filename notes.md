@@ -1,3 +1,5 @@
-## Magisk (f95478f1) (26101)
-- Truncate file only if needed
-- Export get_prop to Rust
+## Magisk (eddc862f) (26101)
+- Use POSIX format
+- Add mnt ns attach support for `su`
+- Reimplement `su -z`
+- Support settings gids of su
