@@ -1,3 +1,3 @@
-## Magisk (c79bc832) (26102)
-- Update dependencies
-- Simplify logging code
+## Magisk (9ea9f019) (26102)
+- Resolve clippy errors and warnings
+- Provide easy access to the cargo command
