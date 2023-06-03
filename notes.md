@@ -1,3 +1,3 @@
-## Magisk (9ea9f019) (26102)
-- Resolve clippy errors and warnings
-- Provide easy access to the cargo command
+## Magisk (feb44f87) (26102)
+- Migrate PREINITDEVICE in recovery mode<br><br>Close #6917
+- Do not realpath ANDROID_SDK_ROOT
