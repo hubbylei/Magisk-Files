@@ -1,3 +1,5 @@
-## Magisk (feb44f87) (26102)
-- Migrate PREINITDEVICE in recovery mode<br><br>Close #6917
-- Do not realpath ANDROID_SDK_ROOT
+## Magisk (f8c38eab) (26102)
+- Proper Windows support
+- Improve bootimg const correctness
+- Improve byte_data const correctness
+- Cleanup cpio codebase
