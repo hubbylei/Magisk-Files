@@ -1,5 +1,2 @@
-## Magisk (f8c38eab) (26102)
-- Proper Windows support
-- Improve bootimg const correctness
-- Improve byte_data const correctness
-- Cleanup cpio codebase
+## Magisk (5e2ef1b7) (26102)
+- Better bytes support in C++
