@@ -1,10 +1,11 @@
-## Magisk (c1038ac6) (26102)
-- Remove permissve update_engine
-- Increase sccache hit rate
-- Use sccache on non CI env
-- Fix release build
-- Fix typo
-- Move find_apk_path to Rust
-- Introduce directory traversal
-- Directly use memmem in contains
-- Bridge C++ bytes with Rust &[u8]
+## Magisk (d15017b7) (26102)
+- AVD test on API 34
+- Add arg requirement for cpio extract
+- Fix Utf8CStr::as_ref() -> OsStr
+- Improve Rust implementation<br><br>- Move mmap_file implementation into Rust<br>- Introduce Utf8CStr as the better c-string type to use
+- Use to_string instead of to_owned
+- Add log for restore
+- No check rm -r
+- Fix compile errors and cleanup
+- Update cargo files
+- Refactor magiskboot cpio
