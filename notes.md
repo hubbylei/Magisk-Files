@@ -1,11 +1,6 @@
-## Magisk (d15017b7) (26102)
+## Magisk (9d6f6764) (26102)
+- Use Metadata instead of direct stat syscall
+- Replace all CStr usage to Utf8CStr
+- Remove unnecessary lifetime markers
+- Fix map_file
 - AVD test on API 34
-- Add arg requirement for cpio extract
-- Fix Utf8CStr::as_ref() -> OsStr
-- Improve Rust implementation<br><br>- Move mmap_file implementation into Rust<br>- Introduce Utf8CStr as the better c-string type to use
-- Use to_string instead of to_owned
-- Add log for restore
-- No check rm -r
-- Fix compile errors and cleanup
-- Update cargo files
-- Refactor magiskboot cpio
