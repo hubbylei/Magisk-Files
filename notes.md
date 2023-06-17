@@ -1,8 +1,5 @@
-## Magisk (8abcccc2) (26102)
-- Fix typo
-- Read certificate in Rust<br><br>Co-authored-by: topjohnwu <topjohnwu@gmail.com>
-- Fix scripts on Windows
-- Fix `find_apk_path`
-- Box CpioEntry
-- Fix two typo
-- Fix copy_cstr
+## Magisk (04938292) (26102)
+- Update strings.xml sq
+- Update PORTUGUESE Translation
+- Update Chinese translation<br><br>Co-authored-by: 南宫雪珊 <vvb2060@gmail.com>
+- Update Slovak translation
