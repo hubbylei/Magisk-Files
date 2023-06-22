@@ -1,5 +1,6 @@
-## Magisk (58055736) (26102)
-- Update clean operation
+## Magisk (dc26ad71) (26102)
+- Address clippy warnings
+- Replace clap with argh
 - Minor cleanup
-- Use quick-protobuf
-- Move su request path to magisk tmp
+- Move pattern matching to Rust
+- Move hexpatch to Rust
