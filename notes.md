@@ -1,7 +1,4 @@
-## Magisk (43b9a09c) (26103)
-- Update Italian app strings
-- Update Italian stub strings
-- Update French translation
-- Fix backup fails when ramdisk does not exist
-- Cleanup SHA hash implementation
-- Use rust to calculate sha
+## Magisk (606d97ae) (26103)
+- Trace location from LoggedError<br><br>Co-authored-by: topjohnwu <topjohnwu@gmail.com>
+- Custom help message when using argh<br><br>Help messages generated from argh is nearly useless and very hard to<br>customize. Fork argh and disable all code for generating help messages.<br><br>Use a closure to print the help message when handling EarlyExit.
+- Handle cpio commands properly
