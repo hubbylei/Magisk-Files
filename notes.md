@@ -1,4 +1,7 @@
-## Magisk (606d97ae) (26103)
-- Trace location from LoggedError<br><br>Co-authored-by: topjohnwu <topjohnwu@gmail.com>
-- Custom help message when using argh<br><br>Help messages generated from argh is nearly useless and very hard to<br>customize. Fork argh and disable all code for generating help messages.<br><br>Use a closure to print the help message when handling EarlyExit.
-- Handle cpio commands properly
+## Magisk (4856da15) (26103)
+- Ignore `userdata.img` in Samsung tar firmware packages<br><br>Signed-off-by: BlackMesa123 <giangrecosalvo9@gmail.com>
+- No need to use submodule for argh
+- Refine cpio argh<br><br>we can use argh to handle `--help` now
+- Properly handle visibility
+- Fix error logging<br><br>ok_or will unconditionally creates a LoggedResult, which prints<br>an error even it successes. Use ok_or_else which lazily creates<br>a LoggedResult only if it fails.
+- Fix stub resource loading on Android 9, 10<br><br>They can only load resources from zip files<br><br>Co-authored-by: canyie <a1364259@163.com><br>Co-authored-by: 南宫雪珊 <vvb2060@gmail.com>
