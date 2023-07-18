@@ -1,2 +1,8 @@
-## Magisk (4caed73f) (26103)
-- Always include boot image when processing tar<br><br>Credits: @BlackMesa123<br><br>Fix #7132, close #7133
+## Magisk (08bfbb15) (26104)
+- Release new canary build
+- Avoid using IconCompat.createFromIcon() that doesn't support bitmap icon
+- Remove unused line
+- Remove unused code and logic
+- Support AVB1.0 signing and verification in magiskboot
+- Partially document global variables in scripts
+- Segment memory mapped boot image region
