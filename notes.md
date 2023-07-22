@@ -1,2 +1,3 @@
-## Magisk (39383229) (26104)
-- Update dependencies<br><br>Close #7128
+## Magisk (6141bb5b) (26104)
+- Fix MagiskInstaller.patchBoot() error catching
+- Do not override global variables in document
