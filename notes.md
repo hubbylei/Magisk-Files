@@ -1,3 +1,21 @@
-## Magisk (6141bb5b) (26104)
-- Fix MagiskInstaller.patchBoot() error catching
-- Do not override global variables in document
+## Magisk (0f5963f2) (26105)
+- Update PORTUGUESE Translation
+- Update strings.xml Albania
+- manager.sh: check vbmeta device by getprop
+- Release new canary build
+- Update Slovak translation
+- sulog: add migration
+- sulog: add more info
+- Update De translation
+- suBiometric: fix open app on second user will auto disable biometric<br><br>second user does not support biometric, but the config of app ignores user
+- SuperuserViewModel: fix updatePolicy<br><br>Starting biometrics may cause the SuperuserFragment to lost focus. After onResume(), doLoadWork() will refresh the itemsPolicies, so notify property changed will work on wrong items. Fixed by snapshotting items to be refreshed before starting biometrics.
+- SuRequestViewModel: fix await RootService on the main thread
+- Update scripts/avd_magisk.sh
+- avd_magisk: hide stderr
+- Print permissive rules
+- Update libselinux and libsepol
+- Support dumping sepolicy rules
+- Update xperm parsing
+- Fix perror
+- magiskpolicy: Fix old xperms being cleared when adding new xperms<br><br>This commit updates sepol_impl::add_xperm_rule() so that it loads the<br>current xperm bits from the existing avtab entry before setting or<br>clearing xperm bits. This fixes new allowxperm rules causing old xperm<br>rules within the same xperm specified/driver to be removed.<br><br>Fixes: #7176<br><br>Signed-off-by: Andrew Gunnerson <accounts+github@chiller3.com>
+- Random small refactoring
