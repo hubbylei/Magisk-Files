@@ -1,3 +1,4 @@
-## Magisk (350d0d60) (26105)
-- Update build script
-- Merge files
+## Magisk (f86c66c9) (26105)
+- Officially support API 34
+- Update dependencies, AGP, and SDK level
+- Use cxx_name instead of rust_name
