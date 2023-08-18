@@ -1,2 +1,2 @@
-## Magisk (41226c12) (26105)
-- Update to ONDK r25.7
+## Magisk (275208e8) (26105)
+- Update Rust dependencies
