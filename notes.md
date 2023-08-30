@@ -1,2 +1,3 @@
-## Magisk (e9b9bf98) (26201)
-- Fix syntax error in util_functions.sh
+## Magisk (6bdc57cb) (26202)
+- Release new canary build
+- Always check mounts to detect legacy SAR on bootmode
