@@ -1,3 +1,2 @@
-## Magisk (a55d5702) (26301)
-- Move more I/O operations into Rust
-- Do not support systems without SELinux
+## Magisk (6e7a9957) (26301)
+- Introduce UtfCString
