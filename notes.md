@@ -1,3 +1,2 @@
-## Magisk (79a1c39b) (26301)
-- Simplify fd sanitization
-- Enable Zygisk by default in emulators<br><br>Make sure CI tests Zygisk
+## Magisk (6076b52c) (26301)
+- Update libcxx
