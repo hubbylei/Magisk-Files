@@ -1,2 +1,2 @@
-## Magisk (6076b52c) (26301)
-- Update libcxx
+## Magisk (f80198a6) (26301)
+- typo fix
