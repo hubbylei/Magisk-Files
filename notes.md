@@ -1,2 +1,2 @@
-## Magisk (36de6287) (26301)
-- Fix error logging on the C++ side
+## Magisk (32c5153e) (26301)
+- Increase boot timeout to 600s
