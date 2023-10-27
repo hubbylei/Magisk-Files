@@ -1,4 +1,4 @@
-## Magisk (9088b584) (26302)
-- Use official argh
-- Use ccache for C code
-- Update dependencies
+## Magisk (28770b9a) (26302)
+- Support baseline profiles
+- [STRINGS] Improve Turkish (tr) language
+- Update build.yml
