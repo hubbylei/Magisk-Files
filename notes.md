@@ -1,4 +1,3 @@
-## Magisk (977c9812) (26401)
-- Make sure native bridge is restored on daemon restart
-- Reorganize zygisk code
-- Restructure project files
+## Magisk (cfb20b0f) (26401)
+- Zygisk refactoring part 2
+- Use bitflags
