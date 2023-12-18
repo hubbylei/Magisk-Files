@@ -1,2 +1,31 @@
-## Magisk (2b54b3ef) (26403)
+## Magisk (6cda6c2f) (26403)
+- Upgrade github action deps
+- Update Portuguese Translation
+- Skip svc for ro properties<br><br>ro properties' triggers should only be triggered once, otherwise it<br>may undefined behaviour.<br>This patch avoids triggering ro properties' actions again when using<br>resetprop to modify them.<br><br>Co-authored-by: 5ec1cff <ewtqyqyewtqyqy@gmail.com>
+- Update system_properties for pre Android 10
 - Avoid zygiskd restarts when boot-complete
+- Do not always zero initialize for rust resize vec
+- Only compress regular file
+- Support compressing during cpio backup
+- Use special emulator to make tests less flaky
+- Release new canary build
+- uiautomator dump to /data/local/tmp
+- Clone dir attr for tmpfs in advance
+- Properly version zygisk APIs
+- Fixes for Android 14 QPR2 B2<br><br>Added new method signatures and arguments
+- Fix clone_attr for newly created dirs
+- Update install guide<br><br>- Remove boot vbmeta patching because the checkbox is removed in b1363ee<br>- Remove meaningless slot argument from `fastboot flash` as it will automatically flash the active slot. Fix #7571
+- API 34 AOSP ATD image is released
+- Update Portuguese Translation
+- Update Portuguese Translation
+- Update dependencies
+- Update selinux to disable validation for policydb
+- Make tmpfs mount of magic mount atomic<br><br>This avoid system libraries disappear temporarily during magic mount,<br>which causes some dynamic executables fails to run during post-fs-data.
+- Fix zygiskd not restart when zygote restarts
+- Fix native symbol strips<br><br>`ndkVersion` is also needed by app for striping native symbols.<br>Set it in `setupCommon` instead.
+- Release new canary build
+- Minor cleanup
+- Upgrade AGP
+- Enable rust parallel front-end<br><br>See https://blog.rust-lang.org/2023/11/09/parallel-rustc.html
+- Upgrade gradle
+- Disable SCCACHE_DIRECT
