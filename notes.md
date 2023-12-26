@@ -1,1 +1,2 @@
-## Magisk (1057cb3e) (26403)
+## Magisk (062e498b) (26403)
+- Update Malayalam translations
