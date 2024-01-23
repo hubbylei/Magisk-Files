@@ -1,1 +1,2 @@
-## Magisk (86e00209) (26404)
+## Magisk (b44141ae) (26404)
+- Run tests on Linux
