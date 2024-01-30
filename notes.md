@@ -1,3 +1,2 @@
-## Magisk (df786eb2) (26404)
-- Separate Linux and other jobs
-- Try out composite actions
+## Magisk (9c638cc4) (26404)
+- Remove rust workaround
