@@ -1,2 +1,4 @@
-## Magisk (9c638cc4) (26404)
-- Remove rust workaround
+## Magisk (d78ee171) (26405)
+- Release new canary build
+- Code clean up
+- Fix zygisk unload
