@@ -1,4 +1,14 @@
-## Magisk (d78ee171) (26405)
+## Magisk (b04e1394) (27001)
+- Update README
+- Rename DownloadManager to DownloadEngine<br><br>Also add some documentation
+- Disable foreground service on API 34+
+- Update AGP
+- Use user-initiated jobs for download tasks on API 34+
+- Isolate download logic from service lifecycle
 - Release new canary build
-- Code clean up
-- Fix zygisk unload
+- Update README
+- Release Magisk v27.0
+- Add v27.0 changelog
+- Update cxx and Rust dependencies
+- Upgrade gradle
+- Use Apple Silicon for CI<br><br>https://github.blog/changelog/2024-01-30-github-actions-introducing-the-new-m1-macos-runner-available-to-open-source/
