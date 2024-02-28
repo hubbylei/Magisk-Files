@@ -1,25 +1,5 @@
-## Magisk (8f7d2e38) (27001)
-- Make crt0 an external submodule
-- Use Rust for formatting<br><br>The fprintf implementation included in crt0 is too rudimental
-- Fix fread and fwrite implementation
-- Remove usage of patched static lib
-- Implement string routines
-- Make it easy to build without crt0
-- Minor fixes
-- Make all platforms build properly
-- Remove unnecessary lock usage
-- Implement strerror
-- Reorganize files
-- Implement stub functions
-- Add setenv
-- Add dirent implementation
-- Use execve directly
-- Complete stdio
-- Remove fopen usage in magiskinit
-- Introduce string/mem functions
-- Add the generic syscall function
-- Add printf and sscanf family
-- Add all missing syscalls
-- Add memory allocator
-- Declare more symbols
-- Initial crt0 implementation<br><br>Builds but cannot link, missing a lot of symbols
+## Magisk (715284b7) (27001)
+- Reorganize code
+- Use self implemented parse_mount_info
+- Replace all parse_mount_info usage with Rust
+- Update init logging implementation<br><br>Use less std::fs
