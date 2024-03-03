@@ -1,9 +1,3 @@
-## Magisk (b6c24a3a) (27001)
-- No more sony `init.real` tricks<br><br>Co-authored-by: canyie <a1364259@163.com><br>Co-authored-by: vvb2060 <vvb2060@gmail.com>
-- Avoid hexpatch /init for 2SI when possible<br><br>Previous we hexpatch /init from /system/bin/init to /data/magiskinit<br>to redirect the second stage init. However, some devices like sony<br>has /init that does not directly invoke /system/bin/init, and thus<br>the hexpatch fails.<br><br>In this patch, we further make use of AOSP `SwitchRoot` to help us<br>bind mount /data/magisk to /system/bin/init after `SwitchRoot`.<br><br>Two important assumption about 2SI are i) that the second stage init<br>is always /system/bin/init and ii) that the /sdcard (path after<br>`SwitchRoot`) is always a symlink to `/storage/self/primary`. When<br>these assumptions hold, during first stage init (before `SwitchRoot`)<br>we can bind mount magiskinit to /sdcard, and create a symlink<br>/storage/self/primary to /system/system/bin/init. By these steps,<br>during `SwitchRoot`, AOSP init will try to mount move /sdcard to<br>/system/sdcard. And /system/sdcard is symlink to /storage/self/primary,<br>it will try to mount move /sdcard to /storage/self/primary. And<br>/storage/self/primary in ramfs is now a symlink that points to<br>/system/system/bin/init, thus AOSP will try to mount move /sdcard<br>(which is a bind mount to magiskinit) to /system/system/bin/init.<br>After chroot done by AOSP init, we then have a magiskinit bind mount<br>on /system/bin/init, which is the second stage init.<br><br>An edge case is that some devices (like meizu) use 2SI but<br>does not switch root. In this case, they must already have a /sdcard<br>in the ramfs, thus we can check if /sdcard exists and fallback to<br>hexpatch.
-- Remove ancient NDK binaries
-- Build magiskboot with crt0
-- Less usage of C stdio
-- Further reduce code size
-- Remove seek support from streams
-- Address clippy warnings
+## Magisk (2290ddeb) (27001)
+- Fix segfault when sepolicy.rule has empty line
+- Update crt0
