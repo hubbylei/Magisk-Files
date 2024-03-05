@@ -1,3 +1,2 @@
-## Magisk (2290ddeb) (27001)
-- Fix segfault when sepolicy.rule has empty line
+## Magisk (a6ff3672) (27001)
 - Update crt0
