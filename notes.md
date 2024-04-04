@@ -1,7 +1,4 @@
-## Magisk (fb5ee866) (27002)
-- Install one single ABI in ramdisk
-- Fix typos
-- Remove unused code
-- Move revert_unmount into Rust
-- Implement preinit related features in Rust
-- Use const_format for const strings
+## Magisk (652a26d5) (27002)
+- Fix comment of sepolicy
+- Update RustCrypto dependencies
+- Add p521 to magiskboot
