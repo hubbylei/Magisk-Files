@@ -1,4 +1,3 @@
-## Magisk (652a26d5) (27002)
-- Fix comment of sepolicy
-- Update RustCrypto dependencies
-- Add p521 to magiskboot
+## Magisk (0d9ec093) (27002)
+- Code cleanup
+- Make denylist work when zygisk is disabled<br><br>Co-authored-by: topjohnwu <topjohnwu@gmail.com>
