@@ -1,3 +1,4 @@
-## Magisk (0d9ec093) (27002)
-- Code cleanup
-- Make denylist work when zygisk is disabled<br><br>Co-authored-by: topjohnwu <topjohnwu@gmail.com>
+## Magisk (ffc1e38e) (27002)
+- Add 32 bit CI
+- Update crt0 for 32 bit
+- Support 32-bit magiskboot
