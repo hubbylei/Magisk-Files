@@ -1,1 +1,3 @@
-## Magisk (0e569913) (27002)
+## Magisk (33b7b8b2) (27002)
+- Update resetprop
+- Address Rust warnings
