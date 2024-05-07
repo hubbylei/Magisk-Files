@@ -1,3 +1,3 @@
-## Magisk (33b7b8b2) (27002)
-- Update resetprop
-- Address Rust warnings
+## Magisk (0e569913) (27002)
+- Improve and add missing strings for Spanish
+- add missing `xz_dec_end`
