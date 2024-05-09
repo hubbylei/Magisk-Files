@@ -1,3 +1,5 @@
-## Magisk (0e569913) (27002)
-- Improve and add missing strings for Spanish
-- add missing `xz_dec_end`
+## Magisk (6f2c76b8) (27002)
+- Fix build script
+- Switch rustup_wrapper to Rust implementation<br><br>For better Windows portability
+- Support rustup wrapper
+- Update build.py to use pathlib
