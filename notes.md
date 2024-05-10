@@ -1,5 +1,3 @@
-## Magisk (6f2c76b8) (27002)
-- Fix build script
-- Switch rustup_wrapper to Rust implementation<br><br>For better Windows portability
-- Support rustup wrapper
-- Update build.py to use pathlib
+## Magisk (eed03080) (27002)
+- Update to ONDK r27.1
+- Upgrade AGP to 8.4.0
