@@ -1,5 +1,6 @@
-## Magisk (6cf00130) (27002)
-- Check Magisk version instead of app version
-- Rename db entry name
-- app: add safe mode config to menu
-- core: add safe mode config to db
+## Magisk (941a363c) (27002)
+- Support waiting on non-exist prop
+- Update strings.xml sq
+- Update PORTUGUESE translation
+- Update PORTUGUESE translation
+- Update Slovak translation
