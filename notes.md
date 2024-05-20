@@ -1,6 +1,2 @@
-## Magisk (941a363c) (27002)
-- Support waiting on non-exist prop
-- Update strings.xml sq
-- Update PORTUGUESE translation
-- Update PORTUGUESE translation
-- Update Slovak translation
+## Magisk (c6f07625) (27002)
+- Use pidfd_open for setns<br><br>which is more efficient on newer kernel
