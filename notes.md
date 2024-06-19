@@ -1,2 +1,5 @@
-## Magisk (19f15f16) (27002)
-- Use icf to further minimize binary size
+## Magisk (a89b9e6a) (27002)
+- Support 16K page size
+- Update to ONDK r27.2
+- Update libsu and dependencies
+- Support Python 3.12+
