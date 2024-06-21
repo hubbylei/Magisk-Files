@@ -1,5 +1,5 @@
-## Magisk (a89b9e6a) (27002)
-- Support 16K page size
-- Update to ONDK r27.2
-- Update libsu and dependencies
-- Support Python 3.12+
+## Magisk (8178666b) (27002)
+- Add 16k page testing in CI
+- Disable verbose output by default
+- Add new test cases
+- Update avd_test to support custom type
