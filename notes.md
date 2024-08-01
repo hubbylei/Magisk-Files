@@ -1,7 +1,31 @@
-## Magisk (a6e65f9a) (27003)
-- Fix building release builds
-- Re-enable nonTransitiveRClass
-- Decouple core module from AppCompatActivity
-- Move :app to :app:apk
-- Move :stub to :app:stub
-- Separate core codebase into its own module<br><br>- Separate UI specific code and resources outside of the core<br> application logic<br>- Allow most of the code to move forward and use KSP for annotation<br> processing and isolate rotton code that is stuck with databinding<br>- Make full UI rewrite more feasible
+## Magisk (9093be13) (27006)
+- Run commands through shell on Windows
+- Build debug with thin lto
+- Check vendor boot ramdisk table size
+- Support vendor boot unpack/repack<br><br>Fix #6460, close #6620
+- Output logs to files
+- Make sure version is fetched correctly
+- Updated Arabic
+- Release new canary build
+- Add release script
+- Stop embedding executables
+- Update README.MD<br><br>Remove redundant Canary changelog link
+- Use metadata even if it is f2fs
+- Correctly handle comments in sepolicy.rule
+- Fix sepolicy rule path
+- Update Chinese translation
+- Use K2 in kapt
+- Update dependencies
+- Create :app:clean task
+- Do not modify args<br><br>Close #8242
+- Update README
+- Release new canary build
+- Run copy_preinit_files in run_migrations
+- Catch possible exceptions when the receiver is already unregistered
+- Remove NVBASE<br><br>We only move /cache/data_adb/magisk and /data/magisk to /data/adb/magisk (#7638), so NVBASE is redundant and we can just use MAGISKBIN.
+- clean code
+- update copy_preinit_files
+- Use ro.crypto.metadata.enabled
+- Use symlink to setup preinit
+- Add comment about the choice
+- Refactor preinit finding
