@@ -1,2 +1,6 @@
-## Magisk (1539cfe8) (27006)
-- Support setting custom ABI list<br><br>Also stop building riscv64 by default
+## Magisk (ca36b42d) (27006)
+- Update release.sh
+- Address clippy warnings
+- Update cargo dependencies
+- Properly configure Rust builds
+- Cleanup build.py
