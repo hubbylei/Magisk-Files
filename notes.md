@@ -1,3 +1,6 @@
-## Magisk (07835a3e) (27006)
-- util_functions.sh: Fix syntax error due to missing `then`<br><br>Signed-off-by: Andrew Gunnerson <accounts+github@chiller3.com>
-- Fix find_boot_image<br><br>Close #8255
+## Magisk (2d341863) (27006)
+- set MAGISKTMP
+- Fix wrong cxx_extern return value<br><br>This fix UB
+- Temporarily disable Windows CI
+- Update AGP
+- Update to ONDK r27.4
