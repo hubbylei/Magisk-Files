@@ -1,5 +1,8 @@
-## Magisk (1db80228) (27006)
-- Move worker mount to magiskinit
-- Move devpts mount to magiskinit
-- Switch to gmake on macOS
-- Call sqlite3_free only on sqlite3 malloc-ed objects
+## Magisk (c76cc4c6) (27006)
+- Update cuttlefish hostside tools
+- Update TR Locales
+- Test 16k on Cuttlefish
+- load `partition_map` only once
+- Use find_if
+- Use parse_impl for partition_map
+- Use `androidboot.partition_map` as a fallback for matching partition names in the preinit finding.
