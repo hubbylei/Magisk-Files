@@ -1,8 +1,11 @@
-## Magisk (c76cc4c6) (27006)
-- Update cuttlefish hostside tools
-- Update TR Locales
-- Test 16k on Cuttlefish
-- load `partition_map` only once
-- Use find_if
-- Use parse_impl for partition_map
-- Use `androidboot.partition_map` as a fallback for matching partition names in the preinit finding.
+## Magisk (e6bd2ff6) (27006)
+- Fix stock image restore<br><br>Fix #8211
+- Fix module auto install<br><br>Fix #8208
+- Update dependencies
+- BYD XDJA container support
+- Revert \Don't support alternative binary paths\<br><br>This reverts commit 1eeb2a34a117b6826e1f1d63d59bfc81b0f23317.
+- find_boot_image: test GKI 1.0
+- find_boot_image: test previous kernels (<=4.19)
+- find_boot_image: keep symlink
+- Only save gradle cache on asset build job
+- Use gradle version catalog
