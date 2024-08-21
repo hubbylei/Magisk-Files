@@ -1,11 +1,2 @@
-## Magisk (e6bd2ff6) (27006)
-- Fix stock image restore<br><br>Fix #8211
-- Fix module auto install<br><br>Fix #8208
-- Update dependencies
-- BYD XDJA container support
-- Revert \Don't support alternative binary paths\<br><br>This reverts commit 1eeb2a34a117b6826e1f1d63d59bfc81b0f23317.
-- find_boot_image: test GKI 1.0
-- find_boot_image: test previous kernels (<=4.19)
-- find_boot_image: keep symlink
-- Only save gradle cache on asset build job
-- Use gradle version catalog
+## Magisk (c2eb6039) (27006)
+- Require GMS to be system app<br><br>Fixes https://github.com/topjohnwu/Magisk/issues/8279.
