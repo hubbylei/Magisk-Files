@@ -1,2 +1,4 @@
-## Magisk (c2eb6039) (27006)
-- Require GMS to be system app<br><br>Fixes https://github.com/topjohnwu/Magisk/issues/8279.
+## Magisk (1dc723fb) (27006)
+- Attempt to reuse cache on Windows
+- Custom sccache support in CI
+- Simplify ramdisk test
