@@ -1,3 +1,3 @@
-## Magisk (8e82113b) (27007)
-- Release new canary build
-- zygisk_node: skip magisk32 if 64bit zygote only
+## Magisk (a82f17c5) (27007)
+- Disable Samsung PROCA<br><br>Signed-off-by: Salvo Giangreco <giangrecosalvo9@gmail.com>
+- init: support 2SI devices with skip_initramfs
