@@ -1,3 +1,18 @@
-## Magisk (a82f17c5) (27007)
-- Disable Samsung PROCA<br><br>Signed-off-by: Salvo Giangreco <giangrecosalvo9@gmail.com>
-- init: support 2SI devices with skip_initramfs
+## Magisk (4f18a66d) (27008)
+- Release new canary build
+- Fix post-fs-data blocking time in doc<br><br>https://github.com/topjohnwu/Magisk/commit/f7d3d1eeaffd6ace0b7c3c654bbd389575126f3c.
+- Don't append \start logd\ in post-fs-data<br><br>This was first done in b13eb3f because magiskd was started in\r<br>post-fs stage that time. Among all android versions, logd was all\r<br>started before post-fs-data.
+- Update strings.xml Albania (sq)
+- Upgrade Gradle
+- Update Portuguese translation
+- magiskboot: cleanup bootconfig and vendor ramdisk dir
+- Enable core library desugaring<br><br>Fix #8343
+- Update dependencies
+- Clarify magiskboot requirements for repacking img
+- Return exit value of action.sh
+- Automatically close action fragment when action exits successfully
+- Add `action.sh` for user to manually trigger modules' functionality from app
+- Upgrade AGP
+- deps: update gradle to 8.10
+- ci: fix build
+- app: target api 35
