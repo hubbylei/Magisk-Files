@@ -1,2 +1,2 @@
-## Magisk (7f675f4b) (27008)
-- Update dependencies
+## Magisk (8086b593) (27008)
+- Update crt0<br><br>Fix #8424
