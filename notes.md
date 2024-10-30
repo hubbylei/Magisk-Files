@@ -1,3 +1,2 @@
-## Magisk (455b13b8) (28001)
-- Fix download URL in stub.apk
-- Update dependencies
+## Magisk (f4502f8b) (28001)
+- Add our own API desugaring<br><br>Fix #8452
