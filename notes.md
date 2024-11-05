@@ -1,2 +1,4 @@
-## Magisk (f4502f8b) (28001)
-- Add our own API desugaring<br><br>Fix #8452
+## Magisk (c661009b) (28001)
+- docs(ci): update setup action to state correct jdk version
+- app: auto close action fragment only when focus lost
+- daemon: some samsung devices using incorrect mediatek-res path
