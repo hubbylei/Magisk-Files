@@ -1,3 +1,11 @@
-## Magisk (06616659) (28002)
-- Only desugar ZipEntry's methods
+## Magisk (895b5f6c) (28003)
 - Release new canary build
+- strings.xml<br><br>The strings have been translated into Ukrainian.
+- Update AGP
+- Update Russian Translation
+- Cleanup DesugarClassVisitorFactory
+- Simplify MagiskD Rust/C++ FFI
+- Update cxx-rs
+- Stop using polymorphism in magiskinit
+- Cleanup mount code in magiskinit
+- Update avd_test API versions
