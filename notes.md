@@ -1,11 +1,4 @@
-## Magisk (895b5f6c) (28003)
-- Release new canary build
-- strings.xml<br><br>The strings have been translated into Ukrainian.
-- Update AGP
-- Update Russian Translation
-- Cleanup DesugarClassVisitorFactory
-- Simplify MagiskD Rust/C++ FFI
-- Update cxx-rs
-- Stop using polymorphism in magiskinit
-- Cleanup mount code in magiskinit
-- Update avd_test API versions
+## Magisk (b09ceeb4) (28003)
+- scripts: sync avd_magisk.sh with mgiskinit
+- core: use a new tmpfs as worker
+- core: insert symlink magisk_node
