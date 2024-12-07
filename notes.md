@@ -1,4 +1,4 @@
-## Magisk (b09ceeb4) (28003)
-- scripts: sync avd_magisk.sh with mgiskinit
-- core: use a new tmpfs as worker
-- core: insert symlink magisk_node
+## Magisk (47cc532d) (28101)
+- Release new canary build
+- Release Magisk v28.1
+- Add v28.1 release notes
