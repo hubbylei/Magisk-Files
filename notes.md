@@ -1,4 +1,6 @@
-## Magisk (47cc532d) (28101)
-- Release new canary build
-- Release Magisk v28.1
-- Add v28.1 release notes
+## Magisk (2e86d21c) (28101)
+- 16k pages only work on Android B on x64
+- Address clippy warnings
+- Update rust dependencies
+- Update ONDK r28.1
+- Test 16K pages with AVD instead of Cuttlefish
