@@ -1,6 +1,5 @@
-## Magisk (2e86d21c) (28101)
-- 16k pages only work on Android B on x64
-- Address clippy warnings
-- Update rust dependencies
-- Update ONDK r28.1
-- Test 16K pages with AVD instead of Cuttlefish
+## Magisk (c5124968) (28101)
+- install_module: simplify script
+- flash module: ignore META-INF
+- Support zip files with unsupported compresssion method
+- Disable CI on master push<br><br>Changes should be done through PRs for CI
