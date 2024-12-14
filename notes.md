@@ -1,5 +1,6 @@
-## Magisk (c5124968) (28101)
-- install_module: simplify script
-- flash module: ignore META-INF
-- Support zip files with unsupported compresssion method
-- Disable CI on master push<br><br>Changes should be done through PRs for CI
+## Magisk (2ce4a554) (28101)
+- Make ndk-build happy when Rust libs are missing
+- Introduce instrumentation tests
+- Remove usage of ProcessLifecycle
+- Cleanup imports
+- Split file processing into its own class
