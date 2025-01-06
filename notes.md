@@ -1,7 +1,4 @@
-## Magisk (7edd8be1) (28101)
-- Minor changes
-- Bind SQLite to Rust
-- Use argument binding for query
-- Use better C++ SQL APIs
-- Cleanup database code
-- Use finer grain sqlite3 APIs
+## Magisk (0d31d356) (28101)
+- Use SQLite's internal time function
+- Fetch policy table from Rust
+- Update Asturian translations<br><br>Fixing and updating
