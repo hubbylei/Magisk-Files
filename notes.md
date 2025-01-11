@@ -1,4 +1,9 @@
-## Magisk (0d31d356) (28101)
-- Use SQLite's internal time function
-- Fetch policy table from Rust
-- Update Asturian translations<br><br>Fixing and updating
+## Magisk (049db49d) (28101)
+- Use preprocessor for 64bit detection
+- zygisk: Let client send arch info
+- Address clippy warnings
+- Migrate uid_granted_root to Rust
+- Migrate prune_su_access to Rust
+- Migrate package detection to Rust
+- Rewrite magisk logging implementation
+- Add more functionality into Rust
