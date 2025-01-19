@@ -1,9 +1,6 @@
-## Magisk (049db49d) (28101)
-- Use preprocessor for 64bit detection
-- zygisk: Let client send arch info
-- Address clippy warnings
-- Migrate uid_granted_root to Rust
-- Migrate prune_su_access to Rust
-- Migrate package detection to Rust
-- Rewrite magisk logging implementation
-- Add more functionality into Rust
+## Magisk (a93593ea) (28101)
+- Update libcxx
+- Kurdish Language For Magisk
+- Fix repeated binding of first argument<br><br>Co-authored-by: LoveSy <shana@zju.edu.cn>
+- Update dependencies
+- Avoid hardcoding max fd size<br><br>Android changed max fd limit to 32768 since Android 9:\r<br>https://github.com/aosp-mirror/platform_system_core/commit/cb5fccc83c6c757f25436884e96c318f72743ffd\r<br>\r<br>Co-authored-by: LoveSy <shana@zju.edu.cn>
