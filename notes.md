@@ -1,2 +1,2 @@
-## Magisk (c3e84050) (28101)
-- Update libcxx
+## Magisk (a0f13ab4) (28101)
+- Move lambda to static function
