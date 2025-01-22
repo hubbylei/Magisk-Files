@@ -1,2 +1,2 @@
-## Magisk (a0f13ab4) (28101)
-- Move lambda to static function
+## Magisk (95d1e69d) (28101)
+- Update to ONDK r28.2
