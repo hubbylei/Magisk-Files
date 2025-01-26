@@ -1,2 +1,2 @@
-## Magisk (95d1e69d) (28101)
-- Update to ONDK r28.2
+## Magisk (54428ba4) (28101)
+- Fix Android Studio C++ indexing
