@@ -1,4 +1,12 @@
-## Magisk (6ea740b5) (28101)
-- Skip clearing install dir if not needed
-- Make ioctl not a special token
-- Fix sterm parsing logic for ioctl
+## Magisk (46980819) (28102)
+- Expose safe mode option on 28+
+- Fix SDK 27 and 28 tests
+- Address clippy warnings
+- Code reorganization
+- Move bootstage into Rust
+- Fully implement daemon side of Zygisk in Rust
+- Implement fd I/O on Rust side
+- Migrate zygisk handler to Rust
+- Move module list into MagiskD
+- Minor code cleanup
+- Release new canary build
