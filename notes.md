@@ -1,12 +1,3 @@
-## Magisk (46980819) (28102)
-- Expose safe mode option on 28+
-- Fix SDK 27 and 28 tests
-- Address clippy warnings
-- Code reorganization
-- Move bootstage into Rust
-- Fully implement daemon side of Zygisk in Rust
-- Implement fd I/O on Rust side
-- Migrate zygisk handler to Rust
-- Move module list into MagiskD
-- Minor code cleanup
-- Release new canary build
+## Magisk (58a25a3e) (28102)
+- Fix su with tty
+- Update cxx-rs
