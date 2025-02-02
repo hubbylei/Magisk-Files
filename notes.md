@@ -1,3 +1,2 @@
-## Magisk (58a25a3e) (28102)
-- Fix su with tty
-- Update cxx-rs
+## Magisk (59622d16) (28102)
+- Use static methods in cxx-rs
