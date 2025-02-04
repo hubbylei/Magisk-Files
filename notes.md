@@ -1,7 +1,4 @@
-## Magisk (bb02ea3a) (28102)
-- Fix file descriptor IPC
-- Replace rust inner functions to try blocks
-- Make sure IPC is arch agnostic
-- Cleanup code and bindings
-- Implement su_daemon in Rust
-- Implement simple serialization over IPC
+## Magisk (a14fc90f) (28102)
+- Fix fetching notification settings from db (#8761)<br><br>Co-authored-by: LoveSy <shana@zju.edu.cn>
+- Make sepolicy a shared type between rust and cxx
+- Fix zygisk module load
