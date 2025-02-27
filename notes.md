@@ -1,3 +1,2 @@
-## Magisk (e55c4132) (28102)
-- Correctly handle truncated dtb
-- Cleanup logcat.log for each invocation
+## Magisk (b6b34f76) (28102)
+- Fix overlay.d context preservation
