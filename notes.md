@@ -1,2 +1,7 @@
-## Magisk (b6b34f76) (28102)
-- Fix overlay.d context preservation
+## Magisk (494615d9) (28102)
+- Support ./build.py emulator with an APK argument
+- docs: add avd_magisk.sh to faq
+- avd_magisk: add general usage
+- avd_magisk: support rootfs without sbin
+- Update AGP
+- Introduce new sepolicy strategy for legacy devices<br><br>The existing sepolicy patching strategy looks like this:<br><br>1. 2SI: use LD_PRELOAD to hijack `security_load_policy`<br>2. Split policy: devices using split policy implies it also needs to<br> do early mount, which means fstab is stored in device tree.<br> So we do the following:<br> - Hijack the fstab node in the device tree in sysfs<br> - Wait for init to mount selinuxfs for us<br> - Hijack selinuxfs to intercept sepolicy loading<br>3. Monolithic policy: directly patch `/sepolicy`<br><br>Method #1 and #2 both has the magiskinit pre-init daemon handling<br>the sepolicy patching and loading process, while method #3 gives us<br>zero control over sepolicy loading process. Downsides:<br><br>a. Pre-init daemon bypasses the need to guess which sepolicy init<br> will load, because the original init will literally send the stock<br> sepolicy file directly to us with this approach.<br>b. If we want to add more features/functionalities during the sepolicy<br> patching process, we will leave out devices using method #3<br><br>In order to solve these issues, we completely redesign the sepolicy<br>patching strategy for non-2SI devices. Instead of limiting usage of<br>pre-init daemon to early mount devices, we always intercept the<br>sepolicy loading process regardless of the Android version and device<br>setup. This will give us a unified implementation for sepolicy patching,<br>and will make it easier to develop further new features down the line.
