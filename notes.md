@@ -1,6 +1,8 @@
-## Magisk (c6c1a17a) (28102)
-- Address several clippy warnings
-- Also run clippy with release mode<br><br>[skip ci]
-- Support zImage compression types other than gzip.<br><br>Instead of just searching for the gzip magic, it now incrementally searches the kernel for the first thing that `check_fmt_lg` doesn't report as `UNKNOWN`.
-- Skip all tests on master push
-- Fix cache save condition
+## Magisk (e8958c6b) (28102)
+- Upgrade argh to stable release
+- Migration to Edition 2024
+- Update Cargo.toml
+- get_secontext: ignore ENODATA
+- set exit code of log ExitOnError to -1
+- Update ONDK to r28.3
+- Update rustup_wrapper<br><br>[skip ci]
