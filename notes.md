@@ -1,4 +1,3 @@
-## Magisk (95d3eac2) (28102)
-- Cleanup xwrap functions
-- Remove unused hasGMS variable
-- Replace bzip2 with bz2-rs
+## Magisk (52ef1d1c) (28102)
+- Simplify matching selinux context of child zygote (#8845)
+- Enable optimize_for_size for Rust std (#8844)
