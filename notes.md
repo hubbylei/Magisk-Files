@@ -1,5 +1,3 @@
-## Magisk (3b8b61bf) (28102)
-- Remove ZipUtils.kt
-- Properly buffer I/O
-- Always close outputStream in processFile<br><br>Fix #8735
-- Update dependencies
+## Magisk (a396abf5) (28103)
+- Minor changes<br><br>[skip ci]
+- Release new canary build<br><br>[skip ci]
