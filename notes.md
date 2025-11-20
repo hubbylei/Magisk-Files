@@ -1,6 +1,31 @@
-## Magisk (2aba7247) (28103)
-- Skip stub APK install on emulator<br><br>Reduce test flakiness
-- API 36 does not support wait_for_bootanim
-- avd_test: upgrade to android16 beta3
-- native: delete global 16k option<br><br>NDK 28 enable 16 KiB page size compatibility option by default, delete the global option to restore 4k alignment for 32-bit arch.
-- app: target sdk 36
+## Magisk (52d7eff0) ()
+- Fix splice direction for ptmx out stream
+- Disable help triggers on subcommands
+- Update dependencies
+- Enhance fdt_header validation for empty dtb
+- Free regex resources in plt_hook_commit<br><br>Free regex resources for registered and ignored hooks before clearing the lists.
+- Update dependencies
+- Support optional trailing positional arguments
+- Support short only options and switches
+- Cleanup code for EarlyExit during help triggers
+- Update default help triggers
+- Vendor argh sources<br><br>Further customization will come in future commits
+- Format Rust imports with rustfmt
+- Make all dependencies workspace = true
+- Remove clickable attribute from item_module_md2.xml
+- Set module card as non clickable<br><br>It's so easy to mis-click card.
+- Build debug without debug-info
+- Release Magisk v30.4<br><br>[skip ci]
+- Cleanup code
+- Support API level as floating point
+- Add easy knobs to disable security checks
+- Make fetchUpdate safe
+- Handle second splice() failure gracefully
+- Several minor fixes/improvements
+- Default initialize before swap in move constructor<br><br>Fix #9373, fix #9384, fix #9400, fix #9404
+- Fix logging implementation error
+- Only reset NB prop when zygisk is enabled
+- core: Update Persian translation
+- Release Magisk v30.3<br><br>[skip ci]
+- Remove unused code
+- Refactor code for more readability
