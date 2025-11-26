@@ -1,2 +1,2 @@
-## Magisk (3a60ef20) ()
-- Update to ONDK r29.3
+## Magisk (8d534e6d) ()
+- Update cxx-rs
