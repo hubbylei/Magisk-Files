@@ -1,2 +1,1 @@
-## Magisk (8d534e6d) ()
-- Update cxx-rs
+## Magisk (8d534e6d) (30400)
