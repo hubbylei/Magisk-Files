@@ -1,2 +1,2 @@
-## Magisk (97c93a1f) (30400)
-- Smaller release binary size
+## Magisk (2c24a41b) (30400)
+- Update gradle dependencies
