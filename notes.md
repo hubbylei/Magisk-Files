@@ -1,1 +1,3 @@
-## Magisk (0bbc7360) (30600)
+## Magisk (0919db6b) (30600)
+- magiskboot: Avoid implicit type conversion<br><br>Fix #9607
+- Update to AGP 9.0
