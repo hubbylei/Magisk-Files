@@ -1,2 +1,2 @@
-## Magisk (e729eec6) (30600)
-- Remove unnecessary file system permissions<br><br>Removed permissions for mounting loop devices, mirrors, and tmpfs.
+## Magisk (b55f597c) (30600)
+- Skip loading magisk in charger mode
