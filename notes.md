@@ -1,5 +1,4 @@
-## Magisk (4dd6e3c2) (30600)
-- Minor changes for app
-- Optimize preinit finding and add klogdump partition<br>* Use major number check to filter out device-mapper devices while preserving virtio-blk compatibility.<br>* Introduce `klogdump` partition support for Smartisan devices as a valid preinit target.
-- Allow reacquiring capabilities if not explicitly cleared<br><br>- Old behavior: Switching to a non-zero UID was implicitly interpreted as a request to drop capabilities, thereby preventing subsequent reacquisition via `su`.<br>- New behavior: Switching to a non-zero UID now requires the `--drop-cap` argument to explicitly prevent the reacquisition of capabilities.
-- Reorder positional arguments in Backup and Remove
+## Magisk (e872fafd) (30600)
+- Update getModuleDir() API doc
+- Update libsepol to upstream Android 16 QPR2
+- Update ota.md<br><br>Hi there, appreciate you and your work.\r<br>\r<br>Proposing a small change to the A/B device update instructions, based on your changes within the Magisk app which made those instructions outdated/ invalid. \r<br>Specifically, after installing Magisk to the new slot, apparently Magisk then instructs to go back to the system update and hit restart now, instead of the prior instructions which remain on this website of rebooting within the Magisk app. I just did testing, and rebooting within the Magisk app does not result in slot switch, which must be why you noe instruct to go back to system update for the restart now. \r<br>\r<br>Just thought I'd update the instructions for anyone who might be confused. \r<br>\r<br>Thx!
