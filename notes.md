@@ -1,4 +1,6 @@
-## Magisk (122a0a33) (30700)
+## Magisk (9dc9b202) (30700)
+- Update Indonesian translations<br>Change-Id: I8243d30f8df1fb9c9aabff85c081db3dba9695b1
+- Update strings.xml sq
 - Fix Gradle dependencies cache restore
 - Disable Kotlin for stub<br>We need to do it after switching to built-in Kotlin
 - Switch over to use composite build-logic<br>Using buildSrc comes with too many caveats, switch over to a composite<br>build-logic solves a lot of buildSrc's issue.
@@ -9,3 +11,21 @@
 - Manual UI tweaking
 - Redesign the home screen<br>Assist-by: Gemini
 - Switch to Google Material 3 library<br>Made-with: Gemini
+- Make build.py generate flags.prop for app projects<br>Reduce logic duplication in build.py and app/buildSrc. The ground truth<br>is always build.py, so dump all information into a file so the gradle<br>projects are always in sync with the rest of the project.
+- Update Indonesian translations<br>Change-Id: I5677410a0d767f54f0fe7fe74695d117d33d69c0
+- Update GitHub actions
+- Setup CI for app-ng
+- Re-integrate old app implementation into project
+- Merge next generation app impl into master
+- Rename apk to preserve history after future merge
+- Move apk module to apk-ng<br>In preparation to preserve the existing old apk module codebase so<br>that the old implementation can live side-by-side the next generation.
+- Optimize imports
+- Fix module install showing script help due to unescaped single quotes<br>The command passed to busybox `script -c '...'` contained embedded<br>single quotes (from echo and file path), breaking the outer quoting.<br>Escape them with the standard POSIX `'\\''` technique before wrapping.<br>Made-with: Cursor
+- Add padding and center alignment to log empty state text<br>Made-with: Cursor
+- Add windowSoftInputMode adjustResize to MainActivity<br>Made-with: Cursor
+- Improve Core/App card alignment and exclude unused native lib<br>- Use Box with weight(1f) for card content so text gets full width<br>- Pin Install/Reinstall button to bottom with fixed height for alignment<br>- Exclude libandroidx.graphics.path.so from APK (Java fallback exists)<br>Made-with: Cursor
+- Remove bottom action buttons from Log tabs, keep only TopAppBar actions<br>Made-with: Cursor
+- Use tristate checkbox for denylist package toggle<br>Bump miuix to 0.8.6 and migrate Checkbox to the new ToggleableState<br>API. The package-level checkbox now shows indeterminate state when<br>only some processes are selected.<br>Made-with: Cursor
+- Replace Termux terminal libraries with custom read-only Kotlin implementation<br>Fork and heavily simplify terminal-emulator/terminal-view from Termux into<br>a self-contained Kotlin terminal package. Remove all library-style abstractions<br>(TerminalOutput, TerminalSessionClient, Logger) and dead code (mouse events,<br>paste, key input) since the terminal is read-only. The emulator creates a PTY<br>via busybox script for proper escape sequence support. The UI is a pure Compose<br>Canvas with scroll support, replacing the old AndroidView-based approach.<br>Made-with: Cursor
+- Fix blank flash screen and crash when flashing module zips<br>FlashScreen's useTerminal was a plain getter on flashAction, which was<br>only set in LaunchedEffect (after first composition). Since it wasn't<br>a Compose State, no recomposition occurred, leaving the screen stuck on<br>an empty LazyColumn. The unreachable TerminalComposeView meant<br>onEmulatorReady was never called, hanging the coroutine and eventually<br>crashing the process.<br>Pass the action from the route key directly to FlashScreen so it can<br>pick the correct UI path on the very first composition.<br>Made-with: Cursor
+- Use MarkdownText for release notes in core install bottom sheet<br>Made-with: Cursor
