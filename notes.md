@@ -1,2 +1,2 @@
-## Magisk (48909358) (30700)
-- Update Turkish<br>Sync Turkish translations with the latest English strings and improve overall terminology.
+## Magisk (4a1a069a) (30700)
+- Fix gradlew path resolution in env.py
