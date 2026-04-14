@@ -1,2 +1,12 @@
-## Magisk (4a1a069a) (30700)
-- Fix gradlew path resolution in env.py
+## Magisk (63b20cec) (30700)
+- Update Samsung download mode documentation
+- Switch over to use Wire<br>Assisted-by: Gemini
+- app: delete unused files
+- app: update zh-rCN translation
+- app: use userspace copy
+- app: add local file supports for HttpFileChannel
+- app: support download image and patch 2/2
+- app: support download image and patch 1/2
+- app: auto measure width
+- Remove unused code
+- Remove hardcoded strings in apk-ng
