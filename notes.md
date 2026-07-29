@@ -1,4 +1,12 @@
-## Magisk (ffadcfd1) (30700)
-- Update gradle dependencies
-- Update CI versions
-- Update zygisk sepolicy for A17 QPR1 Beta 4<br>Mainline kernel starts to use dedicated memfd_file type for memfd,<br>which makes zygote cannot open memfd created by magiskd.
+## Magisk (0404e0ca) (30700)
+- Fix NG manager storage permission request
+- faster gradle sync
+- clean code
+- fix DataSourceChannel
+- do not use HEAD
+- remove unused code
+- clean strings
+- fix AI code
+- Disable cuttlefish test<br>AOSP is no longer up-to-date<br>[skip ci]
+- Fix API 37.0 CI
+- Setup userspace Magisk tests<br>The existing test infrastructure relies on the full Magisk setup before<br>it can test any functionality. However for most of the time, we just<br>want to test the core Magisk functionality without the need of involving<br>MagiskInit.
