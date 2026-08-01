@@ -1,12 +1,11 @@
-## Magisk (0404e0ca) (30700)
-- Fix NG manager storage permission request
-- faster gradle sync
-- clean code
-- fix DataSourceChannel
-- do not use HEAD
-- remove unused code
-- clean strings
-- fix AI code
-- Disable cuttlefish test<br>AOSP is no longer up-to-date<br>[skip ci]
-- Fix API 37.0 CI
-- Setup userspace Magisk tests<br>The existing test infrastructure relies on the full Magisk setup before<br>it can test any functionality. However for most of the time, we just<br>want to test the core Magisk functionality without the need of involving<br>MagiskInit.
+## Magisk (fd0cb66b) (30700)
+- Cargo fmt
+- Update cargo dependencies
+- Address new clippy warnings
+- Update ONDK to r30.1
+- Fix clippy warnings across native codebase<br>Address clippy warnings including collapsible match statements in<br>bootstages, daemon, su daemon, and db modules, as well as iterator<br>loops in files.rs.<br>Assisted-by: Gemini 3.6 Flash
+- sepolicy: use pure token-based xperm parsing<br>Update extract_token to only split hyphens when preceding a valid<br>hex xperm. Revert parse_xperm and parse_xperms to pure token-based<br>AST parsing without inspecting ID strings.<br>Assisted-by: Gemini 3.6 Flash
+- sepolicy: add unit tests for statement parsing<br>Add unit tests covering all PolicyStatement variants, brace set<br>expansion, xperm ranges/complements, spacing corner cases, and error<br>cases.<br>Assisted-by: Gemini 3.6 Flash
+- sepolicy: parse statements into PolicyStatement enum<br>Parse tokens into intermediate PolicyStatement enums with meaningful<br>field names before executing them on SePolicy.<br>Assisted-by: Gemini 3.6 Flash
+- docs: update native AGENTS.md guidelines<br>Document native build pipeline, FFI mechanics, and Rust code<br>conventions in native/AGENTS.md.<br>Assisted-by: Gemini 3.6 Flash
+- docs: update AGENTS.md guidelines for AI models<br>- Expand top-level AGENTS.md with environment execution rules and AI guidelines.<br>- Add app/AGENTS.md for app subproject architecture and maintenance mode rules.<br>- Add native/AGENTS.md for native C/C++/Rust build target requirements.<br>Assisted-by: Gemini 3.6 Flash
