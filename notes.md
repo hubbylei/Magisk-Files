@@ -1,2 +1,13 @@
-## Magisk (0b0ee561) (30700)
-- Update libcxx
+## Magisk (72dfc7b9) (30700)
+- Reduce the amount of tests to run<br>[skip ci]
+- Update condition to check for newline and comma
+- Update AVB hash header image_size to match unpacked original_image_size.<br>Fixes https://github.com/topjohnwu/Magisk/issues/8389<br>Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
+- fix(localization): Arabic translation
+- feat: improve/sync Arabic translation<br>sync with latest string changes, alongside some adjustments for previous/old strings.
+- Update Ukraine(app/core/src/main/res/values-uk/strings.xml)
+- Update Ukraine(app/stub-res/src/main/res/values-uk/strings.xml)
+- Update Indonesian translations<br>Update and added new translation as subsequent to commit 81413b0f10fa0d2f7ddcca3de50b190c4d5a167c, e70e8088ad592b4683192bc45ac8f9045c6302d8<br>Change-Id: I16ad054110d42a3a282d34621d24b965c3dbfaed
+- Update Czech translations in strings.xml for improved clarity and consistency
+- Update Italian translations (strings.xml)
+- Update Italian translations for Magisk core strings.xml
+- Update resetprop to support --compact
