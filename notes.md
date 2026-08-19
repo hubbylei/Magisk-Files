@@ -1,3 +1,11 @@
-## Magisk (3bdffe69) (30700)
-- Generate shorty in comments and reorder jni_hooks
-- Update avd.sh<br>- Fix API level parsing<br>- Fix -l argument
+## Magisk (0675a18a) (30700)
+- init: check charger mode before force_normal_boot<br>b55f597c (\Skip loading magisk in charger mode\) aborts when<br>androidboot.mode=charger, but the check sits after the force_normal_boot<br>branch. Devices that set androidboot.force_normal_boot=1 during off-mode<br>charging (e.g. some Motorola models) take force_normal_boot -> first_stage()<br>and never reach the charger check, so Magisk still loads in charger mode and<br>bumps the never-reset bootloop counter until safe mode trips.<br>Move the charger check ahead of skip_initramfs/force_normal_boot so charger<br>boots abort regardless, matching AOSP treating charger mode first.<br>Fixes #9967.
+- app: reset install method when file picker or download dialog is cancelled
+- app: adopt Material 3 Expressive UI in apk-ng<br>Update apk-ng components and screens to adhere to Material 3 Expressive<br>design guidelines:<br>- Define expressive Shapes and Typography scales in MagiskTheme.<br>- Add active pill indicators with spring animations to floating nav bar.<br>- Update card surfaces to 20dp-24dp rounded containers with tonal depth.<br>- Modernize action buttons and search bar to expressive pill shapes.<br>- Enhance dialogs and su request screens with rounded surfaces.<br>Assisted-by: Gemini 3.7 Flash
+- app: improve Material 3 colors in apk-ng<br>Improve Material 3 color system compliance and legibility across apk-ng:<br>- Add custom Magisk-branded light and dark fallback color schemes.<br>- Fix button color token pairings and remove custom alpha blending.<br>- Fix surface/background tokens in dialogs and markdown views.<br>- Harmonize badges and warnings with semantic M3 color roles.<br>- Remove redundant TopAppBar icon tint overrides.<br>Assisted-by: Gemini 3.7 Flash
+- Remove unused resources
+- Update gradle dependencies
+- app: add scrollbar to screens in apk-ng<br>Add interactive, draggable scrollbars to all scrollable screens and<br>components in apk-ng so users can fast-scroll through long content.<br>Assisted-by: Gemini 3.7 Flash
+- docs: update AGENTS.md in subdirectories<br>Update subproject AGENTS.md guidelines to always include the top-level<br>AGENTS.md.<br>Assisted-by: Gemini 3.7 Flash
+- app: resize LogLevelBadge using Material 3 Badge<br>Replace custom padded Box in LogLevelBadge with Material 3's Badge<br>component to make log level indicators more compact and consistent<br>with the rest of the application's badge styling.<br>Assisted-by: Gemini 3.7 Flash
+- Update live_setup.sh<br>[skip ci]
