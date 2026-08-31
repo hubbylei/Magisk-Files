@@ -1,8 +1,6 @@
-## Magisk (b2d86c79) (30700)
-- Add webview zygote as umount target<br>https://github.com/tiann/KernelSU/commit/4521784328352c54334beb29e05c74360b60d7cb
-- Fix legacy app launch
-- Update links, icons, and developer
-- Bump MIN_NON_EMPTY_DTB_SIZE to 0x84
-- su: Enable logging and notify by default<br>When a UID makes a root request for the first time, no row exists in<br>the policies table. Previously, RootSettings derived Default, which<br>initialized log and notify to false. As a result, connect_app() skipped<br>calling app_log() or app_notify() immediately after user approval on<br>the initial su request.<br>Explicitly implement Default for RootSettings with log and notify set<br>to true by default.<br>Assisted-by: Gemini 3.7 Flash
-- app-ng: center align empty state placeholder text<br>Set textAlign = TextAlign.Center on the empty state placeholder text in<br>SuperuserScreen and ModuleScreen so multi-line messages are centered<br>horizontally instead of left-aligned.<br>Assisted-by: Gemini 3.7 Flash
-- app-ng: support horizontal scrolling in terminal<br>Increase the terminal buffer columns to prevent text lines from wrapping<br>at the screen boundary, and enable bidirectional scrolling in<br>TerminalScreen.<br>Track the maximum used column across terminal lines dynamically to<br>constrain horizontal scrolling to actual content, and add a horizontal<br>scrollbar component matching the vertical scrollbar.<br>Assisted-by: Gemini 3.7 Flash
+## Magisk (74df51fd) (30700)
+- app-ng: improve uninstalled state on home screen<br>When Magisk is not installed:<br>- Display \Not Installed\ in error color instead of \N/A\<br>- Use a prominent filled primary button for the Install action<br>- Dim the Magisk icon tint to outline color<br>Assisted-by: Gemini 3.7 Flash
+- app-ng: align app card icon and title with magisk<br>Adjust the App card icon size to 48dp and the following spacer to 16dp<br>to match the Magisk card and align their titles horizontally.<br>Assisted-by: Gemini 3.7 Flash
+- app-ng: move uninstall button to top app bar<br>Remove the oversized uninstall button from the home screen content and<br>place an uninstall action icon in the top app bar next to the reboot<br>button.<br>Assisted-by: Gemini 3.7 Flash
+- app-ng: improve su request dialog layout<br>Widen the su request dialog card to fit screen width on phones while<br>capping at 560dp on larger screens. Move the package name to its own<br>row below the app icon and title to avoid clipping and allow it to<br>wrap onto multiple lines when necessary. Make the dialog content<br>vertically scrollable to ensure all actions are visible in landscape.<br>Assisted-by: Gemini 3.7 Flash
+- Don't kill webview zygote on denylist change<br>It won't restart and make webview unusable.
