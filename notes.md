@@ -1,6 +1,5 @@
-## Magisk (74df51fd) (30700)
-- app-ng: improve uninstalled state on home screen<br>When Magisk is not installed:<br>- Display \Not Installed\ in error color instead of \N/A\<br>- Use a prominent filled primary button for the Install action<br>- Dim the Magisk icon tint to outline color<br>Assisted-by: Gemini 3.7 Flash
-- app-ng: align app card icon and title with magisk<br>Adjust the App card icon size to 48dp and the following spacer to 16dp<br>to match the Magisk card and align their titles horizontally.<br>Assisted-by: Gemini 3.7 Flash
-- app-ng: move uninstall button to top app bar<br>Remove the oversized uninstall button from the home screen content and<br>place an uninstall action icon in the top app bar next to the reboot<br>button.<br>Assisted-by: Gemini 3.7 Flash
-- app-ng: improve su request dialog layout<br>Widen the su request dialog card to fit screen width on phones while<br>capping at 560dp on larger screens. Move the package name to its own<br>row below the app icon and title to avoid clipping and allow it to<br>wrap onto multiple lines when necessary. Make the dialog content<br>vertically scrollable to ensure all actions are visible in landscape.<br>Assisted-by: Gemini 3.7 Flash
-- Don't kill webview zygote on denylist change<br>It won't restart and make webview unusable.
+## Magisk (8c4341e9) (30700)
+- Prepare for v31.0 release
+- app: fix navigation when flashing modules<br>When launching a flash intent using FLAG_ACTIVITY_CLEAR_TOP, Android<br>recreates MainActivity if singleTop or singleTask is not set, causing<br>the app to briefly display the home screen before showing the flash<br>screen.<br>Set MainActivity to singleTask, add FLAG_ACTIVITY_SINGLE_TOP to flash<br>intents, and default cold-start flash zip intents to the modules tab.<br>Assisted-by: Gemini 3.7 Flash
+- app-legacy: add webview zygote to denylist<br>Port WebView Zygote denylist support to the legacy app module.<br>Assisted-by: Gemini 3.7 Flash
+- Promote next-gen app to production, and demote existing app to legacy
