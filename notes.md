@@ -1,5 +1,17 @@
-## Magisk (8c4341e9) (30700)
-- Prepare for v31.0 release
-- app: fix navigation when flashing modules<br>When launching a flash intent using FLAG_ACTIVITY_CLEAR_TOP, Android<br>recreates MainActivity if singleTop or singleTask is not set, causing<br>the app to briefly display the home screen before showing the flash<br>screen.<br>Set MainActivity to singleTask, add FLAG_ACTIVITY_SINGLE_TOP to flash<br>intents, and default cold-start flash zip intents to the modules tab.<br>Assisted-by: Gemini 3.7 Flash
-- app-legacy: add webview zygote to denylist<br>Port WebView Zygote denylist support to the legacy app module.<br>Assisted-by: Gemini 3.7 Flash
-- Promote next-gen app to production, and demote existing app to legacy
+## Magisk (29af8001) (30700)
+- Update v31.0 changes
+- Remove PreviewActivity in release builds
+- app: prevent jarring item jumps in denylist UI<br>- Track initiallyChecked state in DenyAppState<br>- Use initiallyChecked in sort comparator to keep list position stable<br>- Keep initially checked items visible in filter when unselected<br>Assisted-by: Gemini 3.7 Flash
+- app: unify LogScreen header scroll background<br>- Wrap TopAppBar and PrimaryTabRow in topBar Column with animated container<br>- Set TopAppBar and PrimaryTabRow containers to transparent to share surface<br>Assisted-by: Gemini 3.7 Flash
+- app: improve Material 3 component conformance<br>- Replace custom dividers with VerticalDivider / HorizontalDivider<br>- Use standard Material 3 search styling for DenyList<br>- Remove redundant button / FAB shape overrides and card clip modifiers<br>- Convert custom warning and notice boxes to Material 3 Card<br>- Align PrimaryTabRow to full width in LogScreen<br>Assisted-by: Gemini 3.7 Flash
+- app: migrate to Material 3 NavigationBar<br>Replace the custom floating navigation bar with official Material 3<br>NavigationBar and NavigationBarItem components, and remove unnecessary<br>bottom padding workarounds across all screens.<br>Assisted-by: Gemini 3.7 Flash
+- app: configure link color for MarkdownText<br>Explicitly set linkTextColor on the underlying TextView so Markdown<br>links adhere to the active Compose theme.<br>Assisted-by: Gemini 3.7 Flash
+- app: improve scrollbar drag handling and inertia<br>Override active fling inertia on touch down using<br>MutatePriority.UserInput and handle scroll events sequentially via a<br>conflated channel.<br>Assisted-by: Gemini 3.7 Flash
+- app: use full-screen dialog for install screen<br>Replace the install bottom sheet with a full-screen Dialog to provide<br>more vertical space for release notes and installation methods.<br>- Remove the legacy multi-step wizard logic from InstallViewModel.<br>- Use styled Cards with SettingsSwitch for install options and<br> SettingsArrow for installation methods.<br>- Remove max height constraint on MarkdownText to allow release notes<br> to expand naturally with full-screen scrolling.<br>Assisted-by: Gemini 3.7 Flash
+- app: use MagiskDialog in SuRequestScreen<br>Refactor SuRequestScreen to use the shared MagiskDialog component,<br>matching standard dialog styling across the app.<br>Assisted-by: Gemini 3.7 Flash
+- app: adjust MagiskDialog width and margins<br>Disable platform default width on dialogs and apply standard horizontal<br>padding and max-width constraints for better readability.<br>Assisted-by: Gemini 3.7 Flash
+- app: consolidate dialogs into MagiskDialog<br>Add a shared MagiskDialog component to unify styling, typography,<br>shape, and button layouts across all dialogs in the app module.<br>Assisted-by: Gemini 3.7 Flash
+- Never import android.R
+- app: use pager for tabs in logs screen<br>Add a HorizontalPager in LogScreen to support swiping horizontally<br>between the Superuser and Magisk log tabs instead of paging the outer<br>main navigation tabs.<br>Assisted-by: Gemini 3.7 Flash
+- app: update zh-rCN translation
+- app: Update Indonesian translations<br>update and cleanup indentation space.<br>Change-Id: Ief761e87ae9367323f0ca6c150192817cff83c62
