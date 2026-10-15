@@ -1,6 +1,14 @@
-# Magisk (1629d447) (31000-41)
+# Magisk (87e72a58) (31000-41)
 
-> app: hide Superuser log tab without root access<br>Omit PrimaryTabRow and SuLogTab in LogScreen when Info.env.isActive is<br>false, rendering MagiskLogTab directly below TopAppBar and skipping<br>SuLog database queries in LogViewModel.<br>Assisted-by: Gemini 4 Argon
+> Use DER encoding for AVB1 ECDSA signatures<br>The AVB 1.0 BootSignature format comes from AOSP's BootSignature.java,<br>which signs and verifies with Java's SHA256withECDSA family. Those<br>produce and expect ASN.1 DER encoded (r, s) signatures.<br>magiskboot wrote and parsed the fixed width r || s form instead. An<br>image signed by AOSP with an EC key was therefore not recognized by<br>`magiskboot verify` (nor flagged AVB1_SIGNED by unpack), and an image<br>signed by `magiskboot sign-avb1` with an EC key was rejected by AOSP's<br>verifier with "Invalid encoding for signature".<br>Encode and decode ECDSA signatures as DER. RSA is unchanged.<br>Assisted-by: Claude Opus 5.5
 
-> app: fix truncated text in SuLogCard header<br>Replace the 3-column ListItem in SuLogCard with a Row and Column<br>layout that places the action badge alongside the app name and gives<br>the UID/PID and timestamp lines the full header width without single-<br>line truncation.<br>Assisted-by: Gemini 4 Argon
+> app: track both read and write progress<br>Add ProgressOutputStream and wrap both the raw input stream and output<br>stream in runWholeFilePatcher so read and write progress and speeds are<br>tracked independently.<br>Render read and write progress on two in-place lines in the terminal to<br>fit narrow screens, and support multi-line in-place updates in<br>appendLineOnMain using ANSI cursor movement and erase-in-display.<br>Assisted-by: Gemini 4 Argon
+
+> app: track raw stream in openProgressStream<br>Wrap the underlying raw source stream in ProgressInputStream before<br>decompression and compare against rawSize (entry.compressedSize for<br>DEFLATED zip entries) so that progress percentages and transfer speeds<br>reflect actual I/O instead of skewed decompressed output on sparse<br>images.<br>Also remove the redundant InflaterInputStream.close() override in<br>ZipChannel since Android's libcore unconditionally ends the Inflater<br>on close().<br>Assisted-by: Gemini 4 Argon
+
+> app: describe supported formats in patch dialog<br>Remove the outdated patch_file_msg string resource across all locales<br>and add a top-level patch_image_msg description in PatchComposableDialog<br>explaining all supported input formats and their expected outputs.<br>Render the formatted description with bold spans, hanging-indent bullet<br>rows, a divider, and improved spacing for the radio group and URL input<br>field.<br>Assisted-by: Gemini 4 Argon
+
+> app: unify image patching and support USB output<br>Merge "Select and patch a file" and "Download and patch a file" into a<br>single "Patch firmware / image" flow that lets users choose between an<br>app-provided firmware suggestion, a local file, or an HTTPS URL.<br>On Googlebooks, allow streaming the patched recovery GPT image directly<br>to a connected USB flash drive via Android's USB Host Bulk-Only<br>Transport and SCSI block commands in UsbBlockDevice, avoiding writing<br>the multi-gigabyte image to internal storage or needing another PC.<br>Assisted-by: Gemini 4 Argon
+
+> Update magisk-app skill regarding string resource updates
 
