@@ -1,6 +1,4 @@
-# Magisk (492d3db7) (31100-)
+# Magisk (33bfff7c) (31100-)
 
-> app: update zh-rCN translation
-
-> core: full check apk sig block
+> app: disable apk signing v1
 
